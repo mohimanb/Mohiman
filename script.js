@@ -37,3 +37,12 @@ function setTheme(mode){
 	
 	localStorage.setItem('theme', mode)
 }
+
+
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
